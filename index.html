@@ -18,6 +18,9 @@
 
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b6bcb'/><text x='16' y='22' font-family='Georgia,serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'>MC</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
   <script>
     // Apply the saved theme before first paint to avoid a flash.
@@ -35,6 +38,7 @@
         <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#talks">Talks</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#education">Education</a></li>
       </ul>
@@ -45,87 +49,91 @@
     </div>
   </nav>
 
-  <main id="main">
-    <!-- ============ HEADER ============ -->
-    <header id="top" class="hero">
+  <div class="layout" id="top">
+    <!-- ============ PROFILE (sidebar on wide screens) ============ -->
+    <aside class="profile">
       <img class="avatar" src="assets/img/profile.jpg" width="600" height="600" alt="Portrait of Michele Craighero">
-      <div>
-        <h1>Michele Craighero</h1>
-        <p class="role">Postdoctoral Researcher · Machine Learning &amp; Computer Vision</p>
-        <p class="affil">DEIB, Politecnico di Milano · Milan, Italy</p>
-        <ul class="links">
-          <li><a href="mailto:michele.craighero@polimi.it" title="michele.craighero@polimi.it">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Polimi email</a></li>
-          <li><a href="mailto:michele.craighero@gmail.com" title="michele.craighero@gmail.com">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Personal email</a></li>
-          <li><a href="https://scholar.google.com/citations?user=nVdmtzgAAAAJ">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9z"/><path d="M5 13v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"/></svg>Google Scholar</a></li>
-          <li><a href="https://www.linkedin.com/in/michele-craighero-198b80239/">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>LinkedIn</a></li>
-          <li><a href="https://github.com/Michelec1997">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>GitHub</a></li>
+      <h1>Michele Craighero</h1>
+      <p class="role">Postdoctoral Researcher<br><span class="field">Machine Learning &amp; Computer Vision</span></p>
+      <p class="affil">DEIB, Politecnico di Milano · Milan, Italy</p>
+      <ul class="links">
+        <li><a href="mailto:michele.craighero@polimi.it">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span class="full">michele.craighero@polimi.it</span><span class="short">Polimi email</span></a></li>
+        <li><a href="mailto:michele.craighero@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span class="full">michele.craighero@gmail.com</span><span class="short">Personal email</span></a></li>
+        <li><a href="https://scholar.google.com/citations?user=nVdmtzgAAAAJ">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9z"/><path d="M5 13v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"/></svg>Google Scholar</a></li>
+        <li><a href="https://www.linkedin.com/in/michele-craighero-198b80239/">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>LinkedIn</a></li>
+        <li><a href="https://github.com/Michelec1997">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>GitHub</a></li>
+      </ul>
+    </aside>
+
+    <main id="main">
+      <!-- ============ ABOUT ============ -->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a Postdoctoral Researcher at DEIB, Politecnico di Milano, working on continual learning and domain adaptation.
+          I develop machine learning models that keep adapting after deployment, as data, users and devices change.
+          In October 2026 I completed an industrial Ph.D. with STMicroelectronics, on domain
+          adaptation and personalization for time series in distributed environments.
+        </p>
+        <p>
+          My research focuses on <strong>federated and semi-supervised domain adaptation</strong>,
+          <strong>on-device learning and personalization</strong> and <strong>robust learning for time series and biomedical
+          signals</strong>.<!---, and the <strong>security of federated learning</strong>. !----> I am now extending this work to
+          self-supervised and contrastive learning with scarce labels, and to anomaly detection, including images.
+        </p>
+      </section>
+
+      <!-- ============ NEWS ============ -->
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news">
+          <li><time datetime="2026-11">Nov 2026</time><span>Started as <strong>Postdoctoral Researcher</strong> at DEIB, Politecnico di Milano.</span></li>
+          <li><time datetime="2026-10">Oct 2026</time><span>Completed my <strong>industrial Ph.D.</strong> at Politecnico di Milano, in partnership with <strong>STMicroelectronics</strong>.</span></li>
+          <li><time datetime="2026-10">Oct 2026</time><span>Local co-chair of AIML Systems 2026 in Lecco, where our paper on on-device speaker verification was accepted.</span></li>
+          <li><time datetime="2025-11">Nov 2025</time><span>Oral presentation of <em>ClusterSSFDA</em> at IEEE ICDM 2025, Washington, DC.</span></li>
+          <li><time datetime="2025-11">Nov 2025</time><span>Our US patent application on federated unsupervised domain adaptation was published.</span></li>
+          <li><time datetime="2025-05">May 2025</time><span><strong>Visiting researcher</strong> at <strong>UiT The Arctic University of Norway</strong>, Tromsø (May–July), with Prof. Filippo Maria Bianchi.</span></li>
+          <li><time datetime="2024-12">Dec 2024</time><span>Oral presentation of <em>SemiFDA</em> at IEEE ICDM 2024, Abu Dhabi.</span></li>
         </ul>
-      </div>
-    </header>
+      </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I am a Postdoctoral Researcher at the Dipartimento di Elettronica, Informazione e Bioingegneria (DEIB) of
-        Politecnico di Milano, working on <strong>learning and adaptation under distribution shift</strong>.
-        I completed an industrial Ph.D. in Information Technology sponsored by <strong>STMicroelectronics</strong>
-        (2022–2026), on learning and adaptation in distributed environments.
-      </p>
-      <p>My research spans three connected directions:</p>
-      <ul class="areas">
-        <li><strong>Federated &amp; semi-supervised adaptation.</strong> Adapting pretrained models to clients that hold only
-          unlabelled data under domain shift (SemiFDA, ClusterSSFDA), and the security of federated contrastive learning.</li>
-        <li><strong>On-device learning.</strong> Personalization and adaptation algorithms that run under tight memory and
-          compute budgets, from STM32 microcontrollers to speaker verification on smart eyewear (with EssilorLuxottica).</li>
-        <li><strong>Robustness for time series &amp; biomedical signals.</strong> Cross-dataset analysis of deep models for
-          seismocardiography (SCG) and contrastive learning for time series.</li>
-      </ul>
-      <p>
-        I am currently extending this work to self-supervised and contrastive learning when labels are scarce, and to
-        anomaly detection, including image data.
-      </p>
-    </section>
+      <!-- ============ PUBLICATIONS ============
+           To add a paper: copy one <article class="pub"> block and edit it.
+           Thumbnails live in assets/img/papers/ (4:3, top of the first page works well).
+      -->
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="note">First author on all peer-reviewed papers. Full list on <a href="https://scholar.google.com/citations?user=nVdmtzgAAAAJ">Google Scholar</a>.</p>
 
-    <!-- ============ NEWS ============ -->
-    <section id="news">
-      <h2>News</h2>
-      <ul class="news">
-        <li><time datetime="2026-11">Nov 2026</time><span>Started as Postdoctoral Researcher at DEIB, Politecnico di Milano.</span></li>
-        <li><time datetime="2026-10">Oct 2026</time><span>Completed my Ph.D. at Politecnico di Milano / STMicroelectronics.</span></li>
-        <li><time datetime="2026-10">Oct 2026</time><span>Local co-chair of <strong>AIML Systems 2026</strong> in Lecco, where our paper on on-device speaker verification was accepted.</span></li>
-        <li><time datetime="2025-11">Nov 2025</time><span>Oral presentation of <em>ClusterSSFDA</em> at <strong>IEEE ICDM 2025</strong>, Washington, DC.</span></li>
-        <li><time datetime="2025-11">Nov 2025</time><span>Our US patent application on federated unsupervised domain adaptation was published.</span></li>
-        <li><time datetime="2025-05">May 2025</time><span>Visiting researcher at UiT The Arctic University of Norway, Tromsø (until July), with Prof. Filippo Maria Bianchi.</span></li>
-        <li><time datetime="2024-12">Dec 2024</time><span>Oral presentation of <em>SemiFDA</em> at <strong>IEEE ICDM 2024</strong>, Abu Dhabi.</span></li>
-      </ul>
-    </section>
+        <h3>Conference papers</h3>
 
-    <!-- ============ PUBLICATIONS ============
-         To add a paper: copy one <article class="pub"> block and edit it.
-         To add a thumbnail: put an image in assets/img/papers/ and replace the
-         <div class="thumb ..."> with  <img class="thumb" src="assets/img/papers/NAME.png" alt="">
-    -->
-    <section id="publications">
-      <h2>Publications</h2>
-      <p class="note">Full list on <a href="https://scholar.google.com/citations?user=nVdmtzgAAAAJ">Google Scholar</a>.</p>
+        <article class="pub">
+          <div class="thumb"><img src="assets/img/papers/speaker-verification.jpg" width="420" height="540" alt="" loading="lazy"></div>
+          <div class="pub-body">
+            <h4>Dynamic Reweighting for Instance to Model-based Transition for On-Device Speaker Verification</h4>
+            <p class="authors"><b>M. Craighero</b>, M. Figini, M. Pariente, G. Boracchi, M. Roveri</p>
+            <p class="venue"><span class="badge">AIML Systems 2026</span> International Conference on AI-ML Systems · Accepted
+              <span class="where-when"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Lecco, Italy · Oct 2026</span></p>
+          </div>
+        </article>
 
-      <h3>Conference papers</h3>
-
-      <article class="pub">
-        <div class="thumb" aria-hidden="true">ICDM</div>
-        <div class="pub-body">
-          <h4>ClusterSSFDA: Clustered Semi-Supervised Federated Domain Adaptation</h4>
-          <p class="authors"><b>M. Craighero</b>, T. Mesropyan, D. Carrera, B. Rossi, D. Stucchi, P. Fragneto, G. Boracchi</p>
-          <p class="venue"><span class="badge">ICDM 2025</span> IEEE International Conference on Data Mining, pp. 1115–1124 · <span class="hl">Oral</span></p>
-          <div class="actions">
-            <a class="btn" href="https://ieeexplore.ieee.org/document/11392074">Paper</a>
-            <details class="bib"><summary class="btn">BibTeX</summary><pre>@inproceedings{craighero2025clusterssfda,
+        <article class="pub">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/11392074" tabindex="-1" aria-hidden="true"><img src="assets/img/papers/clusterssfda.jpg" width="420" height="540" alt="" loading="lazy"></a>
+          <div class="pub-body">
+            <h4>ClusterSSFDA: Clustered Semi-Supervised Federated Domain Adaptation</h4>
+            <p class="authors"><b>M. Craighero</b>, T. Mesropyan, D. Carrera, B. Rossi, D. Stucchi, P. Fragneto, G. Boracchi</p>
+            <p class="venue"><span class="badge">ICDM 2025</span> IEEE International Conference on Data Mining, pp. 1115–1124 · <span class="hl">Oral</span>
+              <span class="where-when"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Washington, DC, USA · 12–15 Nov 2025</span></p>
+            <div class="actions">
+              <a class="btn" href="https://ieeexplore.ieee.org/document/11392074">Paper</a>
+              <details class="bib"><summary class="btn">BibTeX</summary><pre>@inproceedings{craighero2025clusterssfda,
   title     = {{ClusterSSFDA}: Clustered Semi-Supervised Federated Domain Adaptation},
   author    = {Craighero, Michele and Mesropyan, Taguhi and Carrera, Diego and Rossi, Beatrice and Stucchi, Diego and Fragneto, Pasqualina and Boracchi, Giacomo},
   booktitle = {2025 IEEE International Conference on Data Mining (ICDM)},
@@ -133,28 +141,21 @@
   year      = {2025},
   publisher = {IEEE}
 }</pre></details>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="pub">
-        <div class="thumb" aria-hidden="true">AIML<br>Sys</div>
-        <div class="pub-body">
-          <h4>Dynamic Reweighting for Instance to Model-based Transition for On-Device Speaker Verification</h4>
-          <p class="authors"><b>M. Craighero</b>, et al.</p>
-          <p class="venue"><span class="badge">AIML Systems 2026</span> Accepted · with EssilorLuxottica</p>
-        </div>
-      </article>
-
-      <article class="pub">
-        <div class="thumb" aria-hidden="true">ICDM</div>
-        <div class="pub-body">
-          <h4>SemiFDA: Domain Adaptation in Semi-Supervised Federated Learning</h4>
-          <p class="authors"><b>M. Craighero</b>, G. Rossi, B. Rossi, D. Carrera, D. Stucchi, P. Fragneto, G. Boracchi</p>
-          <p class="venue"><span class="badge">ICDM 2024</span> IEEE International Conference on Data Mining, pp. 687–692</p>
-          <div class="actions">
-            <a class="btn" href="https://ieeexplore.ieee.org/document/10884113">Paper</a>
-            <details class="bib"><summary class="btn">BibTeX</summary><pre>@inproceedings{craighero2024semifda,
+        <article class="pub">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/10884113" tabindex="-1" aria-hidden="true"><img src="assets/img/papers/semifda.jpg" width="420" height="540" alt="" loading="lazy"></a>
+          <div class="pub-body">
+            <h4>SemiFDA: Domain Adaptation in Semi-Supervised Federated Learning</h4>
+            <p class="authors"><b>M. Craighero</b>, G. Rossi, B. Rossi, D. Carrera, D. Stucchi, P. Fragneto, G. Boracchi</p>
+            <p class="venue"><span class="badge">ICDM 2024</span> IEEE International Conference on Data Mining, pp. 687–692 · <span class="hl">Oral</span>
+              <span class="where-when"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Abu Dhabi, UAE · 9–12 Dec 2024</span></p>
+            <div class="actions">
+              <a class="btn" href="https://ieeexplore.ieee.org/document/10884113">Paper</a>
+              <a class="btn" href="https://github.com/Michelec1997/SemiFDA">Code</a>
+              <details class="bib"><summary class="btn">BibTeX</summary><pre>@inproceedings{craighero2024semifda,
   title     = {{SemiFDA}: Domain Adaptation in Semi-Supervised Federated Learning},
   author    = {Craighero, Michele and Rossi, Giorgio and Rossi, Beatrice and Carrera, Diego and Stucchi, Diego and Fragneto, Pasqualina and Boracchi, Giacomo},
   booktitle = {2024 IEEE International Conference on Data Mining (ICDM)},
@@ -162,19 +163,20 @@
   year      = {2024},
   publisher = {IEEE}
 }</pre></details>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="pub">
-        <div class="thumb" aria-hidden="true">EMBC</div>
-        <div class="pub-body">
-          <h4>Deep Learning for Identifying Systolic Complexes in SCG Traces: A Cross-Dataset Analysis</h4>
-          <p class="authors"><b>M. Craighero</b>, S. Solbiati, F. Mozzini, E. G. Caiani, G. Boracchi</p>
-          <p class="venue"><span class="badge">EMBC 2024</span> 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society, pp. 1–4</p>
-          <div class="actions">
-            <a class="btn" href="https://ieeexplore.ieee.org/document/10782433">Paper</a>
-            <details class="bib"><summary class="btn">BibTeX</summary><pre>@inproceedings{craighero2024scg,
+        <article class="pub">
+          <a class="thumb" href="https://ieeexplore.ieee.org/document/10782433" tabindex="-1" aria-hidden="true"><img src="assets/img/papers/scg-embc2024.jpg" width="420" height="540" alt="" loading="lazy"></a>
+          <div class="pub-body">
+            <h4>Deep Learning for Identifying Systolic Complexes in SCG Traces: A Cross-Dataset Analysis</h4>
+            <p class="authors"><b>M. Craighero</b>, S. Solbiati, F. Mozzini, E. G. Caiani, G. Boracchi</p>
+            <p class="venue"><span class="badge">EMBC 2024</span> 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society, pp. 1–4 · Poster
+              <span class="where-when"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Orlando, FL, USA · 15–19 Jul 2024</span></p>
+            <div class="actions">
+              <a class="btn" href="https://ieeexplore.ieee.org/document/10782433">Paper</a>
+              <details class="bib"><summary class="btn">BibTeX</summary><pre>@inproceedings{craighero2024scg,
   title     = {Deep Learning for identifying systolic complexes in {SCG} traces: a cross-dataset analysis},
   author    = {Craighero, Michele and Solbiati, Sarah and Mozzini, Federica and Caiani, Enrico Gianluca and Boracchi, Giacomo},
   booktitle = {2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
@@ -182,194 +184,211 @@
   year      = {2024},
   publisher = {IEEE}
 }</pre></details>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <h3>Journal papers</h3>
+        <h3>Journal papers</h3>
 
-      <article class="pub">
-        <div class="thumb" aria-hidden="true">CBM</div>
-        <div class="pub-body">
-          <h4>SCG Systolic Detection in the Wild: A Static–Dynamic Cross-Dataset Analysis</h4>
-          <p class="authors"><b>M. Craighero</b>, S. Solbiati, F. Mozzini, E. G. Caiani, G. Boracchi</p>
-          <p class="venue"><span class="badge">CBM 2025</span> Computers in Biology and Medicine, vol. 199, 111297</p>
-          <div class="actions">
-            <a class="btn" href="https://www.sciencedirect.com/science/article/pii/S0010482525016518">Paper</a>
-            <details class="bib"><summary class="btn">BibTeX</summary><pre>@article{craighero2025scgwild,
+        <article class="pub">
+          <a class="thumb" href="https://doi.org/10.1016/j.compbiomed.2025.111297" tabindex="-1" aria-hidden="true"><img src="assets/img/papers/scg-in-the-wild.jpg" width="420" height="540" alt="" loading="lazy"></a>
+          <div class="pub-body">
+            <h4>SCG Systolic Detection in the Wild: A Static–Dynamic Cross-Dataset Analysis</h4>
+            <p class="authors"><b>M. Craighero</b>, S. Solbiati, F. Mozzini, E. G. Caiani, G. Boracchi</p>
+            <p class="venue"><span class="badge">CBM 2025</span> Computers in Biology and Medicine, vol. 199, 111297 · Open access</p>
+            <div class="actions">
+              <a class="btn" href="https://doi.org/10.1016/j.compbiomed.2025.111297">Paper</a>
+              <details class="bib"><summary class="btn">BibTeX</summary><pre>@article{craighero2025scgwild,
   title   = {{SCG} systolic detection in the wild: A static--dynamic cross-dataset analysis},
   author  = {Craighero, Michele and Solbiati, Sarah and Mozzini, Federica and Caiani, Enrico Gianluca and Boracchi, Giacomo},
   journal = {Computers in Biology and Medicine},
   volume  = {199},
   pages   = {111297},
-  year    = {2025}
+  year    = {2025},
+  doi     = {10.1016/j.compbiomed.2025.111297}
 }</pre></details>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="pub">
-        <div class="thumb" aria-hidden="true">IEEE<br>ESL</div>
-        <div class="pub-body">
-          <h4>On-Device Personalization for Human Activity Recognition on STM32</h4>
-          <p class="authors"><b>M. Craighero</b>, D. Quarantiello, B. Rossi, D. Carrera, P. Fragneto, G. Boracchi</p>
-          <p class="venue"><span class="badge">IEEE ESL 2023</span> IEEE Embedded Systems Letters, vol. 16, no. 2</p>
-          <div class="actions">
-            <a class="btn" href="https://ieeexplore.ieee.org/document/10178063">Paper</a>
-            <a class="btn" href="https://www.youtube.com/watch?v=G9VbDDpzaOw">Talk video</a>
-            <details class="bib"><summary class="btn">BibTeX</summary><pre>@article{craighero2023ondevice,
+        <article class="pub">
+          <a class="thumb" href="https://doi.org/10.1109/LES.2023.3293458" tabindex="-1" aria-hidden="true"><img src="assets/img/papers/ondevice-har-stm32.jpg" width="420" height="540" alt="" loading="lazy"></a>
+          <div class="pub-body">
+            <h4>On-Device Personalization for Human Activity Recognition on STM32</h4>
+            <p class="authors"><b>M. Craighero</b>, D. Quarantiello, B. Rossi, D. Carrera, P. Fragneto, G. Boracchi</p>
+            <p class="venue"><span class="badge">IEEE ESL 2023</span> IEEE Embedded Systems Letters, vol. 16, no. 2, p. 106</p>
+            <div class="actions">
+              <a class="btn" href="https://doi.org/10.1109/LES.2023.3293458">Paper</a>
+              <a class="btn" href="https://www.youtube.com/watch?v=G9VbDDpzaOw">Talk video</a>
+              <details class="bib"><summary class="btn">BibTeX</summary><pre>@article{craighero2023ondevice,
   title   = {On-Device Personalization for Human Activity Recognition on {STM32}},
   author  = {Craighero, Michele and Quarantiello, Davide and Rossi, Beatrice and Carrera, Diego and Fragneto, Pasqualina and Boracchi, Giacomo},
   journal = {IEEE Embedded Systems Letters},
   volume  = {16},
   number  = {2},
+  pages   = {106},
   year    = {2023},
-  publisher = {IEEE}
+  doi     = {10.1109/LES.2023.3293458}
 }</pre></details>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <h3>Under review</h3>
+        <h3>Under review</h3>
 
-      <article class="pub">
-        <div class="thumb" aria-hidden="true">TS</div>
-        <div class="pub-body">
-          <h4>K-ICL: Kernel-based Pair Mining for Instance-wise Contrastive Learning of Time Series</h4>
-          <p class="authors"><b>M. Craighero</b>, et al. · with UiT The Arctic University of Norway</p>
-          <p class="venue"><span class="badge muted">Under review</span></p>
-        </div>
-      </article>
-
-      <article class="pub">
-        <div class="thumb" aria-hidden="true">FL</div>
-        <div class="pub-body">
-          <h4>BadAvg: Aggregation-Aware Backdoor Poisoning Attack against Federated Contrastive Learning</h4>
-          <p class="authors"><b>M. Craighero</b>, et al. · with Université libre de Bruxelles</p>
-          <p class="venue"><span class="badge muted">Under review</span></p>
-        </div>
-      </article>
-
-      <h3>Patents</h3>
-
-      <article class="pub">
-        <div class="thumb" aria-hidden="true">US<br>Pat.</div>
-        <div class="pub-body">
-          <h4>Federated Unsupervised Domain Adaptation</h4>
-          <p class="authors">B. Rossi, G. Rossi, <b>M. Craighero</b>, D. Carrera, G. Boracchi, P. Fragneto</p>
-          <p class="venue"><span class="badge">US 2025/0342364 A1</span> US Patent Application 18/653,800 (pending) · STMicroelectronics</p>
-          <div class="actions">
-            <a class="btn" href="https://patents.google.com/patent/US20250342364A1/en">Google Patents</a>
+        <article class="pub">
+          <div class="thumb ph" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4"/><path d="M14 3v5h5"/><circle cx="17" cy="17" r="4"/><path d="M17 15.5V17l1 1"/></svg>
+            Under review
           </div>
+          <div class="pub-body">
+            <h4>K-ICL: Kernel-based Pair Mining for Instance-wise Contrastive Learning of Time Series</h4>
+            <p class="authors"><b>M. Craighero</b>, et al. · with UiT The Arctic University of Norway</p>
+            <p class="venue"><span class="badge muted">Under review</span></p>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="thumb ph" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4"/><path d="M14 3v5h5"/><circle cx="17" cy="17" r="4"/><path d="M17 15.5V17l1 1"/></svg>
+            Under review
+          </div>
+          <div class="pub-body">
+            <h4>BadAvg: Aggregation-Aware Backdoor Poisoning Attack against Federated Contrastive Learning</h4>
+            <p class="authors"><b>M. Craighero</b>, et al. · with Université libre de Bruxelles</p>
+            <p class="venue"><span class="badge muted">Under review</span></p>
+          </div>
+        </article>
+
+        <h3>Patents</h3>
+
+        <article class="pub">
+          <a class="thumb ph" href="https://patents.google.com/patent/US20250342364A1/en" tabindex="-1" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>
+            <span>US Patent<br>Application</span>
+          </a>
+          <div class="pub-body">
+            <h4>Federated Unsupervised Domain Adaptation</h4>
+            <p class="authors">B. Rossi, G. Rossi, <b>M. Craighero</b>, D. Carrera, G. Boracchi, P. Fragneto</p>
+            <p class="venue"><span class="badge">US 2025/0342364 A1</span> US Patent Application 18/653,800 (pending) · STMicroelectronics</p>
+            <div class="actions">
+              <a class="btn" href="https://patents.google.com/patent/US20250342364A1/en">Google Patents</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="entry">
+          <div class="entry-head"><h4>Postdoctoral Researcher</h4><span class="when">Nov 2026 – present</span></div>
+          <p class="where">Politecnico di Milano, DEIB</p>
+          <p>Learning and adaptation under distribution shift: federated and self-supervised (contrastive) learning with scarce
+            or missing labels and data distributed across devices, extended to anomaly detection, including images.</p>
         </div>
-      </article>
-    </section>
 
-    <!-- ============ EXPERIENCE ============ -->
-    <section id="experience">
-      <h2>Experience</h2>
+        <div class="entry">
+          <div class="entry-head"><h4>Industrial Research Project</h4><span class="when">Feb 2026 – Oct 2026</span></div>
+          <p class="where">Politecnico di Milano / EssilorLuxottica</p>
+          <p>On-device text-dependent speaker verification in changing acoustic environments: lightweight models and adaptation
+            algorithms for smart eyewear under strict memory and compute constraints. Paper accepted at AIML Systems 2026.</p>
+        </div>
 
-      <div class="entry">
-        <div class="entry-head"><h3>Postdoctoral Researcher</h3><span class="when">Nov 2026 – present</span></div>
-        <p class="where">Politecnico di Milano, DEIB</p>
-        <p>Learning and adaptation under distribution shift: federated and self-supervised (contrastive) learning with scarce
-          or missing labels and data distributed across devices, extended to anomaly detection, including images.</p>
-      </div>
+        <div class="entry">
+          <div class="entry-head"><h4>Visiting Ph.D. Researcher</h4><span class="when">May 2025 – Jul 2025</span></div>
+          <p class="where">UiT The Arctic University of Norway, Tromsø</p>
+          <p>Kernel-based contrastive learning for time series with Prof. Filippo Maria Bianchi: a kernel-similarity measure
+            guides the selection of positive and negative pairs in a Siamese network, reducing false negatives and helping
+            under strong class imbalance.</p>
+        </div>
 
-      <div class="entry">
-        <div class="entry-head"><h3>Industrial Research Project</h3><span class="when">Feb 2026 – Oct 2026</span></div>
-        <p class="where">Politecnico di Milano / EssilorLuxottica</p>
-        <p>On-device text-dependent speaker verification in changing acoustic environments: lightweight models and adaptation
-          algorithms for smart eyewear under strict memory and compute constraints.</p>
-      </div>
+        <div class="entry">
+          <div class="entry-head"><h4>Industrial Ph.D. Researcher</h4><span class="when">Nov 2022 – Oct 2026</span></div>
+          <p class="where">Politecnico di Milano / STMicroelectronics</p>
+          <ul>
+            <li><strong>Federated &amp; semi-supervised adaptation:</strong> SemiFDA and ClusterSSFDA, plus a multi-dataset
+              simulation framework for controlled domain shift (ICDM 2024, ICDM 2025; US patent application).</li>
+            <li><strong>On-device personalization</strong> of deep models on STM32 microcontrollers for human activity
+              recognition (IEEE ESL 2023; tinyML Talks webcast).</li>
+            <li><strong>Robustness under domain shift</strong> for biomedical time series (EMBC 2024; Computers in Biology and
+              Medicine 2025).</li>
+            <li><strong>Security of federated learning:</strong> BadAvg, an aggregation-aware backdoor attack on federated
+              contrastive learning, in collaboration with ULB Bruxelles.</li>
+          </ul>
+        </div>
+      </section>
 
-      <div class="entry">
-        <div class="entry-head"><h3>Visiting Ph.D. Researcher</h3><span class="when">May 2025 – Jul 2025</span></div>
-        <p class="where">UiT The Arctic University of Norway, Tromsø</p>
-        <p>Kernel-based contrastive learning for time series with Prof. Filippo Maria Bianchi: a kernel-similarity measure
-          guides the selection of positive and negative pairs in a Siamese network, reducing false negatives and helping
-          under strong class imbalance.</p>
-      </div>
-
-      <div class="entry">
-        <div class="entry-head"><h3>Industrial Ph.D. Researcher</h3><span class="when">Nov 2022 – Oct 2026</span></div>
-        <p class="where">Politecnico di Milano / STMicroelectronics</p>
-        <ul>
-          <li><strong>Federated &amp; semi-supervised adaptation:</strong> SemiFDA and ClusterSSFDA, plus a multi-dataset
-            simulation framework for controlled domain shift (ICDM 2024, ICDM 2025; US patent application).</li>
-          <li><strong>On-device personalization</strong> of deep models on STM32 microcontrollers for human activity
-            recognition (IEEE ESL 2023; tinyML Talks webcast).</li>
-          <li><strong>Robustness under domain shift</strong> for biomedical time series (EMBC 2024; Computers in Biology and
-            Medicine 2025).</li>
-          <li><strong>Security of federated learning:</strong> BadAvg, an aggregation-aware backdoor attack on federated
-            contrastive learning, in collaboration with ULB Bruxelles.</li>
+      <!-- ============ TALKS ============ -->
+      <section id="talks">
+        <h2>Talks</h2>
+        <ul class="talks">
+          <li><span class="talk-type">Invited talk</span>
+            <span><em>Enabling On-Device Learning on STM32 Microcontrollers</em>, tinyML Talks webcast, tinyML Foundation, 5 Sep 2023 (with B. Rossi).
+              <a href="https://www.youtube.com/watch?v=G9VbDDpzaOw">Video</a></span></li>
+          <li><span class="talk-type">Oral</span>
+            <span><em>ClusterSSFDA</em>, IEEE ICDM 2025, Washington, DC, USA, Nov 2025.</span></li>
+          <li><span class="talk-type">Oral</span>
+            <span><em>SemiFDA</em>, IEEE ICDM 2024, Abu Dhabi, UAE, Dec 2024.</span></li>
+          <li><span class="talk-type">Poster</span>
+            <span><em>Deep Learning for identifying systolic complexes in SCG traces</em>, IEEE EMBC 2024, Orlando, FL, USA, Jul 2024.</span></li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <!-- ============ TALKS ============ -->
-    <section id="talks">
-      <h2>Talks</h2>
-      <ul class="plain">
-        <li><span class="tag">Invited</span> <em>Enabling On-Device Learning on STM32 Microcontrollers</em>, tinyML Talks webcast, tinyML Foundation, Sep 2023 (with B. Rossi). <a href="https://www.youtube.com/watch?v=G9VbDDpzaOw">Video</a></li>
-        <li><span class="tag">Oral</span> <em>ClusterSSFDA</em>, IEEE ICDM 2025, Washington, DC, Nov 2025.</li>
-        <li><span class="tag">Oral</span> <em>SemiFDA</em>, IEEE ICDM 2024, Abu Dhabi, Dec 2024.</li>
-        <li><span class="tag">Poster</span> SCG cross-dataset analysis, IEEE EMBC 2024, Orlando, Jul 2024.</li>
-      </ul>
-    </section>
+      <!-- ============ TEACHING ============ -->
+      <section id="teaching">
+        <h2>Teaching &amp; Supervision</h2>
+        <h3>Teaching, Politecnico di Milano</h3>
+        <ul class="plain">
+          <li>Teaching assistant, <em>InfoA</em> (Management Engineering), Prof. Luca Magri, 2024/2025.</li>
+          <li>Laboratory supervisor, <em>InfoA</em> (Management Engineering), Prof. Luca Magri, 2023–2025.</li>
+          <li>Tutor, <em>Computer Science</em> (Civil Engineering, B.Sc.), Prof. Luca Magri, 2022/2023.</li>
+        </ul>
+        <h3>M.Sc. thesis co-supervision, Politecnico di Milano / STMicroelectronics</h3>
+        <ul class="plain">
+          <li><em>BadAvg: Aggregation-Aware Backdoor Attack against Federated Contrastive Learning</em>, 2024/2025</li>
+          <li><em>Strengthening Learnable Quantizers for Quantization-Aware Training in Low-Bit Precision</em>, 2024/2025</li>
+          <li><em>Federated Learning for Systolic Complex Detection in SCG Signals</em>, 2023/2024</li>
+          <li><em>Domain-Specific Time-Series Generation via Adversarial Learning</em>, 2023/2024</li>
+          <li><em>SemiFCDA: Semi-Supervised Federated Clustering for Domain Adaptation</em>, 2023/2024</li>
+          <li><em>Enabling Selective Prediction on Personalized Models for the Classification of Lung Sound Abnormalities</em>, 2023/2024</li>
+          <li><em>Federated Unsupervised Domain Adaptation for Human Activity Recognition</em>, 2022/2023</li>
+          <li><em>Quantized Reversible Layers for On-Device Neural Networks Training</em>, 2022/2023</li>
+        </ul>
+      </section>
 
-    <!-- ============ TEACHING ============ -->
-    <section id="teaching">
-      <h2>Teaching &amp; Supervision</h2>
-      <h3>Teaching, Politecnico di Milano</h3>
-      <ul class="plain">
-        <li>Teaching assistant, <em>InfoA</em> (Management Engineering), Prof. Luca Magri, 2024/2025.</li>
-        <li>Laboratory supervisor, <em>InfoA</em> (Management Engineering), Prof. Luca Magri, 2023–2025.</li>
-        <li>Tutor, <em>Computer Science</em> (Civil Engineering, B.Sc.), Prof. Luca Magri, 2022/2023.</li>
-      </ul>
-      <h3>M.Sc. thesis co-supervision, Politecnico di Milano / STMicroelectronics</h3>
-      <ul class="plain">
-        <li><em>BadAvg: Aggregation-Aware Backdoor Attack against Federated Contrastive Learning</em>, 2024/2025</li>
-        <li><em>Strengthening Learnable Quantizers for Quantization-Aware Training in Low-Bit Precision</em>, 2024/2025</li>
-        <li><em>Federated Learning for Systolic Complex Detection in SCG Signals</em>, 2023/2024</li>
-        <li><em>Domain-Specific Time-Series Generation via Adversarial Learning</em>, 2023/2024</li>
-        <li><em>SemiFCDA: Semi-Supervised Federated Clustering for Domain Adaptation</em>, 2023/2024</li>
-        <li><em>Enabling Selective Prediction on Personalized Models for the Classification of Lung Sound Abnormalities</em>, 2023/2024</li>
-        <li><em>Federated Unsupervised Domain Adaptation for Human Activity Recognition</em>, 2022/2023</li>
-        <li><em>Quantized Reversible Layers for On-Device Neural Networks Training</em>, 2022/2023</li>
-      </ul>
-    </section>
+      <!-- ============ SERVICE ============ -->
+      <section id="service">
+        <h2>Service</h2>
+        <ul class="plain">
+          <li>Local co-chair, <strong>AIML Systems 2026</strong>, Lecco, Oct 2026.</li>
+          <li>Reviewer for IEEE TIP, AAAI, ECML-PKDD, ICML and WACV.</li>
+        </ul>
+      </section>
 
-    <!-- ============ SERVICE ============ -->
-    <section id="service">
-      <h2>Service</h2>
-      <ul class="plain">
-        <li>Local co-chair, <strong>AIML Systems 2026</strong>, Lecco, Oct 2026.</li>
-        <li>Reviewer for TIP, AAAI, ECML-PKDD, ICML and WACV.</li>
-      </ul>
-    </section>
-
-    <!-- ============ EDUCATION ============ -->
-    <section id="education">
-      <h2>Education</h2>
-      <div class="entry">
-        <div class="entry-head"><h3>Ph.D. in Information Technology</h3><span class="when">2022 – 2026</span></div>
-        <p class="where">Politecnico di Milano / STMicroelectronics</p>
-        <p>Thesis: <em>Learning and Adaptation in Distributed Environments</em></p>
-      </div>
-      <div class="entry">
-        <div class="entry-head"><h3>M.Sc. Computer Science and Engineering</h3><span class="when">2019 – 2022</span></div>
-        <p class="where">Politecnico di Milano · 107/110</p>
-        <p>Thesis: <a href="https://www.politesi.polimi.it/handle/10589/186836"><em>Cuff-less Blood Pressure Estimation using Deep Learning</em></a>.
-          Erasmus semester at Aarhus University, Denmark.</p>
-      </div>
-      <div class="entry">
-        <div class="entry-head"><h3>B.Sc. Computer Engineering</h3><span class="when">2016 – 2019</span></div>
-        <p class="where">Politecnico di Milano · 106/110</p>
-        <p>Merit-based scholarship for academic performance.</p>
-      </div>
-    </section>
-  </main>
+      <!-- ============ EDUCATION ============ -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-head"><h4>Ph.D. in Information Technology</h4><span class="when">2022 – 2026</span></div>
+          <p class="where">Politecnico di Milano / STMicroelectronics</p>
+          <p>Thesis: <em>Learning in the Wild: Domain Adaptation and Personalization for Time Series in Distributed Environments</em></p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><h4>M.Sc. Computer Science and Engineering</h4><span class="when">2019 – 2022</span></div>
+          <p class="where">Politecnico di Milano · 107/110</p>
+          <p>Thesis: <a href="https://www.politesi.polimi.it/handle/10589/186836"><em>Cuff-less Blood Pressure Estimation using Deep Learning</em></a>.</p>
+          <p>Erasmus semester at Aarhus University, Denmark.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><h4>B.Sc. Computer Engineering</h4><span class="when">2016 – 2019</span></div>
+          <p class="where">Politecnico di Milano · 106/110</p>
+          <p>Merit-based scholarship for academic performance.</p>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <footer>
     <p>© <span id="year">2026</span> Michele Craighero</p>
